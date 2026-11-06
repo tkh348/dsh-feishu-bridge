@@ -1,0 +1,12 @@
+# The bridge stays loaded while unconfigured so a profile can keep it installed.
+# Fill appId and either appSecret / appSecretEnv, then restart dsh.
+- insert:
+    - id: feishu-bridge
+      name: 'dsh-feishu-bridge'
+      disabled: false
+      config:
+        appId: ''
+        appSecretEnv: DSH_FEISHU_APP_SECRET
+        domain: feishu
+        requireMention: true
+        dmMode: open

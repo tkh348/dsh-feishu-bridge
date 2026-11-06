@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output (produced by `pnpm run build`)
+lib/
+lib-test/
+dist/
+*.tgz
+
+# local dev notes (machine-specific paths, internal build log)
+PROGRESS.md
+
+# misc
+*.log
+.DS_Store
+Thumbs.db
